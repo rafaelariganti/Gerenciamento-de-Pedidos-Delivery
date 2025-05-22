@@ -1,7 +1,4 @@
-package exemplopilha;
-
-import javax.swing.JOptionPane;
-
+package com.mycompany.delivery;
 public class Pilha {
 
     private int topo;
@@ -52,8 +49,7 @@ public class Pilha {
 
     public void ExibePilha() {
         if (vazia() == true) {
-            JOptionPane.showMessageDialog(null,
-                    "PILHA VAZIA!");
+            System.out.println("Pilha vazia");
         } else {
             for (int i = topo; i >= 0; i--) {
                 System.out.println("Elemento "
