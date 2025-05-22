@@ -1,4 +1,4 @@
-# 🚀 Sistema de Gerenciamento de Pedidos Delivery 🍔📦
+# 🚀 Gerenciamento de Pedidos Delivery 🍔📦
 
 Simulação de uma plataforma de delivery desenvolvida em Java, usando apenas estruturas de dados implementadas manualmente: 📋 Fila, 🔗 Lista Encadeada e 📥 Pilha.
 Gerencie pedidos do início ao fim: da entrada na fila, passando pelo preparo com etapas rastreáveis, até a finalização e reenvio em caso de erro ou reclamação.
