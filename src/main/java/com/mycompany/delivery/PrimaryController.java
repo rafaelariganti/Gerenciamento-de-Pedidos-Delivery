@@ -9,8 +9,4 @@ public class PrimaryController {
     private void switchToSecondary() throws IOException {
         App.setRoot("secondary");
     }
-     @FXML
-    private void RafaMaju() throws IOException {
-        App.setRoot("secondary");
-    }
 }
