@@ -10,14 +10,24 @@
 
 <BorderPane xmlns="http://javafx.com/javafx/23.0.1"
             xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.mycompany.delivery.HistoricoController">
+            fx:controller="com.mycompany.delivery.HistoricoController"
+            style="-fx-background-color: #f9f9f9;">
 
     <center>
-        <VBox spacing="20.0" alignment="TOP_CENTER" prefWidth="800.0" prefHeight="600.0" style="-fx-padding: 20;">
+        <VBox spacing="20.0" alignment="TOP_CENTER" prefWidth="800.0" prefHeight="600.0" style="-fx-padding: 30;">
             <children>
-                <Label text="📋 Histórico de Pedidos" style="-fx-font-size: 22px; -fx-font-weight: bold;" />
+                <Label text="📋 Histórico de Pedidos"
+                       style="-fx-font-size: 26px; -fx-font-weight: bold; -fx-text-fill: #3B4750; -fx-font-family: 'Segoe UI';" />
 
-                <TableView fx:id="tabelaHistorico" prefHeight="400.0" prefWidth="700.0">
+                <TableView fx:id="tabelaHistorico" prefHeight="400.0" prefWidth="700.0"
+                           style="
+                               -fx-background-color: white;
+                               -fx-border-color: #cccccc;
+                               -fx-border-radius: 6;
+                               -fx-background-radius: 6;
+                               -fx-table-cell-border-color: #e0e0e0;
+                               -fx-padding: 5;
+                           ">
                     <columns>
                         <TableColumn fx:id="colId" text="ID" prefWidth="100.0" />
                         <TableColumn fx:id="colDescricao" text="Descrição" prefWidth="300.0" />
@@ -25,7 +35,16 @@
                     </columns>
                 </TableView>
 
-                <Button text="Voltar" onAction="#voltarTelaPrincipal" />
+                <Button text="Voltar" onAction="#voltarTelaPrincipal"
+                        style="
+                            -fx-background-color: #2C3930;
+                            -fx-text-fill: white;
+                            -fx-font-size: 16px;
+                            -fx-font-weight: bold;
+                            -fx-background-radius: 8;
+                            -fx-padding: 10 24;
+                            -fx-cursor: hand;
+                        " />
             </children>
         </VBox>
     </center>

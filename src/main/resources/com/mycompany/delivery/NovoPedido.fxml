@@ -8,16 +8,24 @@
 <VBox xmlns="http://javafx.com/javafx/23.0.1"
       xmlns:fx="http://javafx.com/fxml"
       fx:controller="com.mycompany.delivery.NovoPedidoController"
-      alignment="CENTER" spacing="15" style="-fx-padding: 30;">
+      alignment="CENTER" spacing="20" style="-fx-padding: 40; -fx-background-color: #f9f9f9;">
 
     <children>
-        <Label fx:id="tituloLabel" text="Adicionar Novo Pedido"
-               style="-fx-font-size: 22px; -fx-font-weight: bold;" />
+        <Label fx:id="tituloLabel" text="📝 Adicionar Novo Pedido"
+               style="-fx-font-size: 26px; -fx-font-weight: bold; -fx-text-fill: #333333; -fx-font-family: 'Segoe UI';" />
 
-        <Label text="Nome do Cliente:" style="-fx-font-size: 14px;" />
-        <TextField fx:id="campoNomeCliente" prefWidth="300" />
+        <Label text="Nome do Cliente:" style="-fx-font-size: 16px; -fx-text-fill: #555555; -fx-font-family: 'Segoe UI';" />
+        
+        <TextField fx:id="campoNomeCliente" prefWidth="320"
+                   style="-fx-font-size: 14px; -fx-padding: 8; -fx-background-radius: 6; -fx-border-color: #cccccc; -fx-border-radius: 6;" />
 
         <Button text="Adicionar Pedido" onAction="#adicionar"
-                style="-fx-font-size: 14px; -fx-padding: 8 16;" />
+                style="-fx-background-color: #A0C878;
+                       -fx-text-fill: white;
+                       -fx-font-size: 16px;
+                       -fx-font-weight: bold;
+                       -fx-background-radius: 8;
+                       -fx-padding: 10 24;
+                       -fx-cursor: hand;" />
     </children>
 </VBox>

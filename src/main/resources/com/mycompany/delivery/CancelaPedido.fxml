@@ -8,16 +8,26 @@
 <VBox xmlns="http://javafx.com/javafx/23.0.1"
       xmlns:fx="http://javafx.com/fxml"
       fx:controller="com.mycompany.delivery.CancelarPedidoController"
-      alignment="CENTER" spacing="15" style="-fx-padding: 30;">
+      alignment="CENTER" spacing="20"
+      style="-fx-padding: 40; -fx-background-color: #f9f9f9;">
 
     <children>
-        <Label fx:id="tituloLabel" text="Cancelar Última Etapa do Pedido"
-               style="-fx-font-size: 22px; -fx-font-weight: bold;" />
+        <Label fx:id="tituloLabel" text="↩️Cancelar Última Etapa do Pedido"
+               style="-fx-font-size: 26px; -fx-font-weight: bold; -fx-text-fill: #3B4750; -fx-font-family: 'Segoe UI';" />
 
         <TextArea fx:id="areaCancelamento" prefWidth="420" prefHeight="200"
-                  editable="false" wrapText="true" />
+                  editable="false" wrapText="true"
+                  style="-fx-background-color: #ffffff; -fx-border-color: #cccccc; -fx-border-radius: 6; -fx-background-radius: 6; -fx-padding: 10; -fx-font-size: 14px;" />
 
         <Button text="Desfazer Última Etapa" onAction="#desfazerUltimaEtapa"
-                style="-fx-font-size: 14px; -fx-padding: 8 16;" />
+                style="
+                    -fx-background-color: #f44336;
+                    -fx-text-fill: white;
+                    -fx-font-size: 16px;
+                    -fx-font-weight: bold;
+                    -fx-background-radius: 8;
+                    -fx-padding: 10 24;
+                    -fx-cursor: hand;
+                " />
     </children>
 </VBox>
