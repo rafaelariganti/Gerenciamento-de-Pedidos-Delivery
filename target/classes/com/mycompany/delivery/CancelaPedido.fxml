@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/23.0.1"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.mycompany.delivery.CancelarPedidoController"
+      alignment="CENTER" spacing="15" style="-fx-padding: 30;">
+
+    <children>
+        <Label fx:id="tituloLabel" text="Cancelar Última Etapa do Pedido"
+               style="-fx-font-size: 22px; -fx-font-weight: bold;" />
+
+        <TextArea fx:id="areaCancelamento" prefWidth="420" prefHeight="200"
+                  editable="false" wrapText="true" />
+
+        <Button text="Desfazer Última Etapa" onAction="#desfazerUltimaEtapa"
+                style="-fx-font-size: 14px; -fx-padding: 8 16;" />
+    </children>
+</VBox>
