@@ -7,11 +7,15 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-
 /**
  * JavaFX App
  */
 public class App extends Application {
+    
+    private static Dados dados = new Dados();
+    public static Dados getDados() {
+        return dados;
+    }
 
     private static Scene scene;
 
