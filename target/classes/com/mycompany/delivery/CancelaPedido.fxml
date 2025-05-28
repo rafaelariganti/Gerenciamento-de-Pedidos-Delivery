@@ -17,7 +17,7 @@
         <TextArea fx:id="areaCancelamento" prefWidth="420" prefHeight="200"
                   editable="false" wrapText="true" />
 
-        <Button text="Desfazer Última Etapa" onAction="#desfazerUltimaEtapa"
+        <Button text="Desfazer Última Etapa" 
                 style="-fx-font-size: 14px; -fx-padding: 8 16;" />
     </children>
 </VBox>

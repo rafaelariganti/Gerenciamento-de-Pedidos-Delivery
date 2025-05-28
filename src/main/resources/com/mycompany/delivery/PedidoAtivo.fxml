@@ -17,7 +17,7 @@
         <TextArea fx:id="areaPedidos" prefWidth="420" prefHeight="300"
                   editable="false" wrapText="true" />
 
-        <Button text="Atualizar Lista" onAction="#atualizarLista"
+        <Button text="Atualizar Lista" 
                 style="-fx-font-size: 14px; -fx-padding: 8 16;" />
     </children>
 </VBox>

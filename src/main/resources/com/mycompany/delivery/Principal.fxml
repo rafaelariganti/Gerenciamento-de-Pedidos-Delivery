@@ -9,7 +9,9 @@
 
 <VBox alignment="CENTER" prefHeight="700.0" prefWidth="1000.0" spacing="40.0"
       xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="com.mycompany.delivery.DeliveryController">
+      fx:controller="com.mycompany.delivery.Controller.Principal"
+
+>
 
     <padding>
         <Insets top="40.0" right="30.0" bottom="40.0" left="30.0" />
@@ -23,36 +25,36 @@
 
                 <HBox alignment="CENTER" spacing="40.0" VBox.vgrow="ALWAYS">
                     <children>
-                        <Button fx:id="btnNovoPedido" onAction="#adicionarPedido"
+                        <Button fx:id="btnNovoPedido" 
                                 prefWidth="400" prefHeight="100" text="➕ Adicionar Novo Pedido" />
-                        <Button fx:id="btnAceitarPedido" onAction="#aceitarPedido"
+                        <Button fx:id="btnAceitarPedido" 
                                 prefWidth="400" prefHeight="100" text="✅ Aceitar Pedido" />
                     </children>
                 </HBox>
 
                 <HBox alignment="CENTER" spacing="40.0" VBox.vgrow="ALWAYS">
                     <children>
-                        <Button fx:id="btnVisualizarPedidos" onAction="#visualizarPedidos"
+                        <Button fx:id="btnVisualizarPedidos" 
                                 prefWidth="400" prefHeight="100" text="👀 Ver Pedidos Ativos" />
-                        <Button fx:id="btnRegistrarEtapa" onAction="#registrarEtapa"
+                        <Button fx:id="btnRegistrarEtapa" 
                                 prefWidth="400" prefHeight="100" text="📝 Registrar Etapa do Preparo" />
                     </children>
                 </HBox>
 
                 <HBox alignment="CENTER" spacing="40.0" VBox.vgrow="ALWAYS">
                     <children>
-                        <Button fx:id="btnDesfazerEtapa" onAction="#desfazerEtapa"
+                        <Button fx:id="btnDesfazerEtapa" 
                                 prefWidth="400" prefHeight="100" text="↩️ Desfazer Última Etapa" />
-                        <Button fx:id="btnFinalizarPedido" onAction="#finalizarPedido"
+                        <Button fx:id="btnFinalizarPedido" 
                                 prefWidth="400" prefHeight="100" text="🏁 Finalizar Preparo" />
                     </children>
                 </HBox>
 
                 <HBox alignment="CENTER" spacing="40.0" VBox.vgrow="ALWAYS">
                     <children>
-                        <Button fx:id="btnConsultarHistorico" onAction="#consultarHistorico"
+                        <Button fx:id="btnConsultarHistorico" 
                                 prefWidth="400" prefHeight="100" text="📋 Consultar Histórico" />
-                        <Button fx:id="btnReencaminhar" onAction="#reencaminharPedido"
+                        <Button fx:id="btnReencaminhar" 
                                 prefWidth="400" prefHeight="100" text="🔁 Reencaminhar Pedido Finalizado" />
                     </children>
                 </HBox>

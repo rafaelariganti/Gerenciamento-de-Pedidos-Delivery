@@ -15,6 +15,6 @@
         
         <TextArea fx:id="areaHistorico" prefWidth="400" prefHeight="300" editable="false" wrapText="true" />
         
-        <Button text="Atualizar Histórico" onAction="#atualizarHistorico" />
+        <Button text="Atualizar Histórico"/>
     </children>
 </VBox>

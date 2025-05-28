@@ -10,15 +10,31 @@
 <BorderPane xmlns="http://javafx.com/javafx/23.0.1"
             xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="com.mycompany.delivery.AceitarPedidoController"
+            stylesheets="@style.css"
             prefWidth="800" prefHeight="600">
 
     <center>
-        <VBox spacing="20.0" alignment="TOP_CENTER" padding="20">
+        <VBox alignment="CENTER" spacing="20.0" BorderPane.alignment="CENTER">
             <children>
-                <Label text="Pedidos Pendentes" style="-fx-font-size: 22px; -fx-font-weight: bold;" />
-                <ListView fx:id="listaPedidos" prefHeight="400" prefWidth="600"/>
-                <Button fx:id="btnAceitar" text="Aceitar Pedido Selecionado" onAction="#aceitarPedido" />
+
+                <Label fx:id="tituloLabel"
+                       text="📦 Pedidos Pendentes"
+                       style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+
+                <ListView fx:id="listaPedidos"
+                          prefHeight="400"
+                          prefWidth="600"/>
+
+                <Button fx:id="btnAceitar"
+                        text="✅ Aceitar Pedido Selecionado"
+                        />
+
             </children>
         </VBox>
     </center>
+
+    <padding>
+        <Insets top="30" right="30" bottom="30" left="30"/>
+    </padding>
+
 </BorderPane>
