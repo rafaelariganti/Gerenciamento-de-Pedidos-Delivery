@@ -1,6 +1,4 @@
-package exemplopilha;
-
-import javax.swing.JOptionPane;
+package com.mycompany.delivery;
 
 public class Pilha {
 
@@ -15,23 +13,15 @@ public class Pilha {
     }
 
     public boolean vazia() {
-        if (topo == -1) {
-            return true;
-        } else {
-            return false;
-        }
+        return topo == -1;
     }
 
     public boolean cheia() {
-        if (topo == tamanho - 1) {
-            return true;
-        } else {
-            return false;
-        }
+        return topo == tamanho - 1;
     }
 
     public void empilhar(Object elem) {
-        if (cheia() == true) {
+        if (cheia()) {
             System.out.println("A pilha está cheia!");
         } else {
             topo++;
@@ -41,7 +31,7 @@ public class Pilha {
 
     public Object desempilhar() {
         Object valorDesempilhado;
-        if (vazia() == true) {
+        if (vazia()) {
             valorDesempilhado = "Pilha Vazia!";
         } else {
             valorDesempilhado = pilhaElem[topo];
@@ -51,15 +41,18 @@ public class Pilha {
     }
 
     public void ExibePilha() {
-        if (vazia() == true) {
-            JOptionPane.showMessageDialog(null,
-                    "PILHA VAZIA!");
+        if (vazia()) {
+            System.out.println("Pilha vazia");
         } else {
             for (int i = topo; i >= 0; i--) {
-                System.out.println("Elemento "
-                        + pilhaElem[i] + " - posição " + i);
+                System.out.println("Elemento " + pilhaElem[i] + " - posição " + i);
             }
         }
     }
-
+    public Object getElemento(int index) {
+        if (index >= 0 && index <= topo) {
+            return pilhaElem[index];
+        }
+        return null;
+    }
 }

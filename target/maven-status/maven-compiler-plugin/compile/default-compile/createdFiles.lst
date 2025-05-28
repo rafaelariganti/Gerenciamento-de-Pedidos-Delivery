@@ -1,4 +1,3 @@
 com\mycompany\delivery\PrimaryController.class
 module-info.class
-com\mycompany\delivery\App.class
 com\mycompany\delivery\SecondaryController.class

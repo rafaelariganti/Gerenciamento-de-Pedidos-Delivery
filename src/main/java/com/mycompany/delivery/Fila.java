@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package filajava;
+package com.mycompany.delivery;
 
 /**
  *
@@ -63,4 +63,13 @@ public class Fila {
 	for (int i = inicio; i < fim; i++)
 		System.out.println("posicao " + i + " valor " + vetor[i]);
 	}
+
+	public String espiar() {
+    if (!vazia()) {
+        return String.valueOf(vetor[inicio]);  // Retorna o elemento na frente da fila sem remover
+    } else {
+        return "Fila vazia";  // Ou pode retornar null, se preferir
+    }
+}
+
 }
