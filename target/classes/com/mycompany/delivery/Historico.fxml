@@ -10,7 +10,7 @@
 
 <BorderPane xmlns="http://javafx.com/javafx/23.0.1"
             xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.mycompany.delivery.HistoricoController">
+            fx:controller="com.mycompany.delivery.Historico">
 
     <center>
         <VBox spacing="20.0" alignment="TOP_CENTER" prefWidth="800.0" prefHeight="600.0" style="-fx-padding: 20;">
