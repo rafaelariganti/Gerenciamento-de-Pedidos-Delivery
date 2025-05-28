@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/23.0.1"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.mycompany.delivery.NovoPedidoController"
+      alignment="CENTER" spacing="15" style="-fx-padding: 30;">
+
+    <children>
+        <Label fx:id="tituloLabel" text="Adicionar Novo Pedido"
+               style="-fx-font-size: 22px; -fx-font-weight: bold;" />
+
+        <Label text="Nome do Cliente:" style="-fx-font-size: 14px;" />
+        <TextField fx:id="campoNomeCliente" prefWidth="300" />
+
+        <Button text="Adicionar Pedido" onAction="#adicionar"
+                style="-fx-font-size: 14px; -fx-padding: 8 16;" />
+    </children>
+</VBox>
