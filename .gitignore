@@ -1,0 +1,58 @@
+# === Java ===
+*.class
+*.log
+*.jar
+*.war
+*.ear
+
+# === IDEs ===
+
+# VS Code
+.vscode/
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# IntelliJ
+*.iml
+.idea/
+out/
+
+# Eclipse
+*.launch
+.settings/
+.project
+.classpath
+bin/
+
+# === Sistema Operacional ===
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# === Ferramentas de build ===
+
+# Maven
+target/
+
+# Gradle
+.gradle/
+build/
+
+# Arquivos temporários
+*.swp
+*.bak
+*.tmp
+
+# === Arquivos de backup e cache ===
+*.~*
